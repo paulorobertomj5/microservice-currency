@@ -1,0 +1,32 @@
+https://github.com/in28minutes/spring-microservices-v3/tree/main/03.microservices
+
+Naming server
+http://localhost:8761/
+
+API GATEWAY
+http://localhost:8765/
+http://localhost:8765/currency-exchange/from/USD/to/BRL
+http://localhost:8765/currency-conversion/from/USD/to/BRL/quantity/65
+http://localhost:8100/currency-conversion-feign/from/USD/to/BRL/quantity/65
+
+
+Currency exchange service
+http://localhost:8000/currency-exchange/from/USD/to/BRL
+http://localhost:8000/currency-exchange/from/EUR/to/BRL
+http://localhost:8000/currency-exchange/from/EUR/to/BRL
+Currency conversion service
+http://localhost:8100/currency-conversion/from/USD/to/BRL/quantity/65
+http://localhost:8100/currency-conversion-feign/from/USD/to/BRL/quantity/65
+
+H2 console
+
+http://localhost:8000/h2-console/
+
+Response Structure
+{
+   "id":10001,
+   "from":"USD",
+   "to":"BRL",
+   "conversionMultiple":65.00,
+   "environment":"8000 instance-id"
+}
