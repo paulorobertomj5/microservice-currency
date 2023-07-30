@@ -28,7 +28,7 @@ public class ApiGatewayConfiguration {
                                 "/currency-conversion-new/(?<segment>.*)",
                                 "/currency-conversion-feign/${segment}"))
                         .uri("lb://currency-conversion"))
-                .build(); 
+                .build();
     }
 
 }
